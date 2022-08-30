@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5014170228BDEF43004A7EFF /* To-Da Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Da Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5014170228BDEF43004A7EFF /* To-Do Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5014170528BDEF43004A7EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5014170728BDEF43004A7EFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5014170928BDEF43004A7EFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		501416F928BDEF43004A7EFF = {
 			isa = PBXGroup;
 			children = (
-				5014170428BDEF43004A7EFF /* To-Da Manager */,
+				5014170428BDEF43004A7EFF /* To-Do Manager */,
 				5014170328BDEF43004A7EFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		5014170328BDEF43004A7EFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5014170228BDEF43004A7EFF /* To-Da Manager.app */,
+				5014170228BDEF43004A7EFF /* To-Do Manager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5014170428BDEF43004A7EFF /* To-Da Manager */ = {
+		5014170428BDEF43004A7EFF /* To-Do Manager */ = {
 			isa = PBXGroup;
 			children = (
 				5014170528BDEF43004A7EFF /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				5014171028BDEF45004A7EFF /* LaunchScreen.storyboard */,
 				5014171328BDEF45004A7EFF /* Info.plist */,
 			);
-			path = "To-Da Manager";
+			path = "To-Do Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5014170128BDEF43004A7EFF /* To-Da Manager */ = {
+		5014170128BDEF43004A7EFF /* To-Do Manager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5014171628BDEF45004A7EFF /* Build configuration list for PBXNativeTarget "To-Da Manager" */;
+			buildConfigurationList = 5014171628BDEF45004A7EFF /* Build configuration list for PBXNativeTarget "To-Do Manager" */;
 			buildPhases = (
 				501416FE28BDEF43004A7EFF /* Sources */,
 				501416FF28BDEF43004A7EFF /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "To-Da Manager";
+			name = "To-Do Manager";
 			productName = "To-Da Manager";
-			productReference = 5014170228BDEF43004A7EFF /* To-Da Manager.app */;
+			productReference = 5014170228BDEF43004A7EFF /* To-Do Manager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 501416FD28BDEF43004A7EFF /* Build configuration list for PBXProject "To-Da Manager" */;
+			buildConfigurationList = 501416FD28BDEF43004A7EFF /* Build configuration list for PBXProject "To-Do Manager" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5014170128BDEF43004A7EFF /* To-Da Manager */,
+				5014170128BDEF43004A7EFF /* To-Do Manager */,
 			);
 		};
 /* End PBXProject section */
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		501416FD28BDEF43004A7EFF /* Build configuration list for PBXProject "To-Da Manager" */ = {
+		501416FD28BDEF43004A7EFF /* Build configuration list for PBXProject "To-Do Manager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5014171428BDEF45004A7EFF /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5014171628BDEF45004A7EFF /* Build configuration list for PBXNativeTarget "To-Da Manager" */ = {
+		5014171628BDEF45004A7EFF /* Build configuration list for PBXNativeTarget "To-Do Manager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5014171728BDEF45004A7EFF /* Debug */,
