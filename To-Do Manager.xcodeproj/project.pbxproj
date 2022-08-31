@@ -12,7 +12,7 @@
 		5014170D28BDEF43004A7EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5014170B28BDEF43004A7EFF /* Main.storyboard */; };
 		5014170F28BDEF45004A7EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5014170E28BDEF45004A7EFF /* Assets.xcassets */; };
 		5014171228BDEF45004A7EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5014171028BDEF45004A7EFF /* LaunchScreen.storyboard */; };
-		5014171A28BDFC6B004A7EFF /* TaskListControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171928BDFC6B004A7EFF /* TaskListControllerTableViewController.swift */; };
+		5014171A28BDFC6B004A7EFF /* TaskListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171928BDFC6B004A7EFF /* TaskListController.swift */; };
 		5014171D28BE029D004A7EFF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171C28BE029D004A7EFF /* Task.swift */; };
 		5014171F28BE0721004A7EFF /* TasksStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171E28BE0720004A7EFF /* TasksStorage.swift */; };
 		50C3054E28BFCD0E00E6C031 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3054D28BFCD0E00E6C031 /* TaskCell.swift */; };
@@ -26,7 +26,7 @@
 		5014170E28BDEF45004A7EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5014171128BDEF45004A7EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5014171328BDEF45004A7EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5014171928BDFC6B004A7EFF /* TaskListControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListControllerTableViewController.swift; sourceTree = "<group>"; };
+		5014171928BDFC6B004A7EFF /* TaskListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListController.swift; sourceTree = "<group>"; };
 		5014171C28BE029D004A7EFF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5014171E28BE0720004A7EFF /* TasksStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksStorage.swift; sourceTree = "<group>"; };
 		50C3054D28BFCD0E00E6C031 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				5014171B28BE028A004A7EFF /* Model */,
 				5014170528BDEF43004A7EFF /* AppDelegate.swift */,
 				5014170728BDEF43004A7EFF /* SceneDelegate.swift */,
-				5014171928BDFC6B004A7EFF /* TaskListControllerTableViewController.swift */,
+				5014171928BDFC6B004A7EFF /* TaskListController.swift */,
 				5014170B28BDEF43004A7EFF /* Main.storyboard */,
 				5014170E28BDEF45004A7EFF /* Assets.xcassets */,
 				5014171028BDEF45004A7EFF /* LaunchScreen.storyboard */,
@@ -176,7 +176,7 @@
 				5014171F28BE0721004A7EFF /* TasksStorage.swift in Sources */,
 				5014170828BDEF43004A7EFF /* SceneDelegate.swift in Sources */,
 				50C3054E28BFCD0E00E6C031 /* TaskCell.swift in Sources */,
-				5014171A28BDFC6B004A7EFF /* TaskListControllerTableViewController.swift in Sources */,
+				5014171A28BDFC6B004A7EFF /* TaskListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TS7WLVSBU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "To-Da Manager/Info.plist";
+				INFOPLIST_FILE = "To-Do Manager/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sergei-Smirnov.To-Da-Manager";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergei-Smirnov.To-Do-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +354,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TS7WLVSBU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "To-Da Manager/Info.plist";
+				INFOPLIST_FILE = "To-Do Manager/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -366,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sergei-Smirnov.To-Da-Manager";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergei-Smirnov.To-Do-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

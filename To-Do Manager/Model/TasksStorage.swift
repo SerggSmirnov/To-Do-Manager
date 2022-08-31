@@ -10,7 +10,7 @@ protocol TasksStorageProtocol {
     func saveTasks(_ tasks: [TaskProtocol])
 }
 
-class TaskStorage: TasksStorageProtocol {
+class TasksStorage: TasksStorageProtocol {
     func loadTasks() -> [TaskProtocol] {
         let testTasks: [TaskProtocol] = [
             Task(title: "Byu beard", type: .normal, status: .planned),
