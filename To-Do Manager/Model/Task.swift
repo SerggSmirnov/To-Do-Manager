@@ -14,11 +14,11 @@ enum TaskStatus {
 }
 
 protocol TaskProtocol {
-    var title: String {get set}
+    var title: String { get set }
     
-    var type: TaskPriority {get set}
+    var type: TaskPriority { get set }
     
-    var status: TaskStatus {get set}
+    var status: TaskStatus { get set }
 }
 
 struct Task: TaskProtocol {
