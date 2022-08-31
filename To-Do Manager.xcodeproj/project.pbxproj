@@ -15,6 +15,7 @@
 		5014171A28BDFC6B004A7EFF /* TaskListControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171928BDFC6B004A7EFF /* TaskListControllerTableViewController.swift */; };
 		5014171D28BE029D004A7EFF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171C28BE029D004A7EFF /* Task.swift */; };
 		5014171F28BE0721004A7EFF /* TasksStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171E28BE0720004A7EFF /* TasksStorage.swift */; };
+		50C3054E28BFCD0E00E6C031 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3054D28BFCD0E00E6C031 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5014171928BDFC6B004A7EFF /* TaskListControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListControllerTableViewController.swift; sourceTree = "<group>"; };
 		5014171C28BE029D004A7EFF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5014171E28BE0720004A7EFF /* TasksStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksStorage.swift; sourceTree = "<group>"; };
+		50C3054D28BFCD0E00E6C031 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		5014170428BDEF43004A7EFF /* To-Do Manager */ = {
 			isa = PBXGroup;
 			children = (
+				50C3054928BFCC8700E6C031 /* View */,
 				5014171B28BE028A004A7EFF /* Model */,
 				5014170528BDEF43004A7EFF /* AppDelegate.swift */,
 				5014170728BDEF43004A7EFF /* SceneDelegate.swift */,
@@ -79,6 +82,22 @@
 				5014171E28BE0720004A7EFF /* TasksStorage.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		50C3054928BFCC8700E6C031 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50C3054A28BFCC9A00E6C031 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50C3054A28BFCC9A00E6C031 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				50C3054D28BFCD0E00E6C031 /* TaskCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +175,7 @@
 				5014170628BDEF43004A7EFF /* AppDelegate.swift in Sources */,
 				5014171F28BE0721004A7EFF /* TasksStorage.swift in Sources */,
 				5014170828BDEF43004A7EFF /* SceneDelegate.swift in Sources */,
+				50C3054E28BFCD0E00E6C031 /* TaskCell.swift in Sources */,
 				5014171A28BDFC6B004A7EFF /* TaskListControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
