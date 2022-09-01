@@ -82,6 +82,17 @@ class TaskListController: UITableViewController {
         }
         return resultSymbol
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var title: String?
+        let tasksType = sectionsTypesPosition[section]
+        if tasksType == .important {
+            title = "Important"
+        } else if tasksType == .normal {
+            title = "Normal"
+        }
+        return title
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
