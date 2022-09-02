@@ -19,6 +19,7 @@ class TasksStorage: TasksStorageProtocol {
             Task(title: "Byu vacuum cleaner", type: .normal, status: .completed),
             Task(title: "Give flowers wife", type: .important, status: .planned),
             Task(title: "Call to perents", type: .important, status: .planned),
+            Task(title: "Invate to party Adolf, Jekky, Leanardo, Will and Bruce", type: .important, status: .planned),
         ]
         return testTasks
     }
