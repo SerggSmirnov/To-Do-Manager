@@ -9,7 +9,7 @@ enum TaskPriority {
     case normal, important
 }
 
-enum TaskStatus {
+enum TaskStatus: Int {
     case planned, completed
 }
 
