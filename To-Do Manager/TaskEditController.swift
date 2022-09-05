@@ -8,15 +8,18 @@
 import UIKit
 
 class TaskEditController: UITableViewController {
-    //
-    var tasktext = ""
+    
+    var taskText = ""
     var taskType: TaskPriority = .normal
     var taskStatus: TaskStatus = .planned
     
     var doAfterEdit: ((String, TaskPriority, TaskStatus) -> Void)?
+    
+    @IBOutlet var taskTitle: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        taskTitle.text = taskText
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
