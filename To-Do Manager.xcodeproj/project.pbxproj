@@ -15,6 +15,7 @@
 		5014171A28BDFC6B004A7EFF /* TaskListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171928BDFC6B004A7EFF /* TaskListController.swift */; };
 		5014171D28BE029D004A7EFF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171C28BE029D004A7EFF /* Task.swift */; };
 		5014171F28BE0721004A7EFF /* TasksStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014171E28BE0720004A7EFF /* TasksStorage.swift */; };
+		5056881A28C66CAB001E0567 /* TaskEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056881928C66CAB001E0567 /* TaskEditController.swift */; };
 		50C3054E28BFCD0E00E6C031 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3054D28BFCD0E00E6C031 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		5014171928BDFC6B004A7EFF /* TaskListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListController.swift; sourceTree = "<group>"; };
 		5014171C28BE029D004A7EFF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5014171E28BE0720004A7EFF /* TasksStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksStorage.swift; sourceTree = "<group>"; };
+		5056881928C66CAB001E0567 /* TaskEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditController.swift; sourceTree = "<group>"; };
 		50C3054D28BFCD0E00E6C031 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				5014170528BDEF43004A7EFF /* AppDelegate.swift */,
 				5014170728BDEF43004A7EFF /* SceneDelegate.swift */,
 				5014171928BDFC6B004A7EFF /* TaskListController.swift */,
+				5056881928C66CAB001E0567 /* TaskEditController.swift */,
 				5014170B28BDEF43004A7EFF /* Main.storyboard */,
 				5014170E28BDEF45004A7EFF /* Assets.xcassets */,
 				5014171028BDEF45004A7EFF /* LaunchScreen.storyboard */,
@@ -177,6 +180,7 @@
 				5014170828BDEF43004A7EFF /* SceneDelegate.swift in Sources */,
 				50C3054E28BFCD0E00E6C031 /* TaskCell.swift in Sources */,
 				5014171A28BDFC6B004A7EFF /* TaskListController.swift in Sources */,
+				5056881A28C66CAB001E0567 /* TaskEditController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
