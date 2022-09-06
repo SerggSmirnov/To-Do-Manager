@@ -15,6 +15,7 @@ class TaskEditController: UITableViewController {
     
     var doAfterEdit: ((String, TaskPriority, TaskStatus) -> Void)?
     
+    
     @IBOutlet var taskTitle: UITextField!
 
     override func viewDidLoad() {
