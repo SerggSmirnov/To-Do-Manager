@@ -12,15 +12,20 @@ class TaskEditController: UITableViewController {
     var taskText = ""
     var taskType: TaskPriority = .normal
     var taskStatus: TaskStatus = .planned
+    private var taskTitles: [TaskPriority:String] = [
+        .important : "Important",
+        .normal : "Normal"
+    ]
     
     var doAfterEdit: ((String, TaskPriority, TaskStatus) -> Void)?
     
     @IBOutlet var taskTitle: UITextField!
+    @IBOutlet var taskTypeLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         taskTitle.text = taskText
-
+        taskTypeLabel?.text = taskTitles[taskType]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
