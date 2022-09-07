@@ -14,23 +14,31 @@ class TaskEditController: UITableViewController {
     var taskStatus: TaskStatus = .planned
     private var taskTitles: [TaskPriority:String] = [
         .important : "Important",
-        .normal : "Normal"
+        .normal : "Current"
     ]
     
     var doAfterEdit: ((String, TaskPriority, TaskStatus) -> Void)?
     
     @IBOutlet var taskTitle: UITextField!
     @IBOutlet var taskTypeLabel: UILabel!
+    @IBOutlet var taskStatusSwitch: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         taskTitle.text = taskText
         taskTypeLabel?.text = taskTitles[taskType]
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        if taskStatus == .completed {
+            taskStatusSwitch.isOn = true
+        }
+    }
+    
+    @IBAction func saveTask(_ sender: UIBarButtonItem) {
+        let title = taskTitle?.text ?? ""
+        let type = taskType
+        let status: TaskStatus = taskStatusSwitch.isOn ? .completed : .planned
+        doAfterEdit?(title, type, status)
+        navigationController?.popViewController(animated: true)
     }
 
     // MARK: - Table view data source
@@ -43,6 +51,17 @@ class TaskEditController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 3
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toTaskTypeScreen" {
+            let destination = segue.destination as! TaskTypeController
+            destination.selectedType = taskType
+            destination.doAftertypeSelected = { [unowned self] selectedType in
+                taskType = selectedType
+                taskTypeLabel?.text = taskTitles[taskType]
+            }
+        }
     }
 
     /*

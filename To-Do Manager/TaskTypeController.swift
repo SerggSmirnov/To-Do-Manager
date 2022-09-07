@@ -9,6 +9,8 @@ import UIKit
 
 class TaskTypeController: UITableViewController {
     
+    var doAftertypeSelected: ((TaskPriority) -> Void)?
+    
     typealias TypeCellDescription = (type: TaskPriority, title: String, description: String)
     private var taskTypesInformation: [TypeCellDescription] = [
         (type: .important, title: "Important", description: "It's priority tasks!!!"),
@@ -49,6 +51,12 @@ class TaskTypeController: UITableViewController {
             cell.accessoryType = .none
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedType = taskTypesInformation[indexPath.row].type
+        doAftertypeSelected?(selectedType)
+        navigationController?.popViewController(animated: true)
     }
     
 
