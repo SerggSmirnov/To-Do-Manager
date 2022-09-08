@@ -225,6 +225,15 @@ class TaskListController: UITableViewController {
             }
         }
     }
+    
+    func setTasks(_ tasksCollection: [TaskProtocol]) {
+        sectionsTypesPosition.forEach { taskType in
+            tasks[taskType] = []
+        }
+        tasksCollection.forEach { task in
+            tasks[task.type]?.append(task)
+        }
+    }
 
     /*
     // Override to support conditional rearranging of the table view.
