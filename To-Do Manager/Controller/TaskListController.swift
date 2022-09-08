@@ -22,6 +22,11 @@ class TaskListController: UITableViewController {
                     return task1position < task2position
                 }
             }
+            var savingArray: [TaskProtocol] = []
+            tasks.forEach { _, value in
+                savingArray += value
+            }
+            tasksStorage.saveTasks(savingArray)
         }
     }
     

@@ -70,9 +70,9 @@
 		5014170428BDEF43004A7EFF /* To-Do Manager */ = {
 			isa = PBXGroup;
 			children = (
-				5076EB5B28C9F6EF000574F4 /* Controller */,
-				50C3054928BFCC8700E6C031 /* View */,
 				5014171B28BE028A004A7EFF /* Model */,
+				50C3054928BFCC8700E6C031 /* View */,
+				5076EB5B28C9F6EF000574F4 /* Controller */,
 				5076EB5C28C9F73C000574F4 /* Other */,
 			);
 			path = "To-Do Manager";
@@ -111,9 +111,9 @@
 		50C3054928BFCC8700E6C031 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				50C3054A28BFCC9A00E6C031 /* Cells */,
 				5014171028BDEF45004A7EFF /* LaunchScreen.storyboard */,
 				5014170B28BDEF43004A7EFF /* Main.storyboard */,
-				50C3054A28BFCC9A00E6C031 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TS7WLVSBU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "To-Do Manager/Info.plist";
+				INFOPLIST_FILE = "To-Do Manager/Other/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -386,7 +386,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TS7WLVSBU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "To-Do Manager/Info.plist";
+				INFOPLIST_FILE = "To-Do Manager/Other/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
